@@ -1,34 +1,37 @@
+/* Custom styles for larger icons and spacing */
+footer .social-icons .social-icon svg {
+  font-size: 2em; /* Adjust the icon size */
+  margin-right: 20px; /* Adjust the space between icons */
+  display: inline-block; /* Ensure icons are on the same line */
+}
+
+/* Fix the footer at the bottom of the page */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .calculator {
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  .resultado {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa; /* Color de fondo gris claro */
+}
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+button {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #f8f9fa; /* Background color for the footer */
+  padding: 20px; /* Padding for the footer */
+  text-align: center;
+}

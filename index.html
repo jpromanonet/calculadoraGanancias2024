@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Sueldo Neto</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/card.css">
+
+  </style>
 </head>
+
 <body>
 
-  <div class="card">
-    <center>
+  <main>
+    <div class="card">
+      <center>
         <h3 class="mb-4">Calculadora de Sueldo Neto</h3>
         <h4 class="mb-4">1° Tramo 2024</h4>
-    </center>
-    <label for="sueldoBruto">Sueldo Bruto:</label>
-    <input type="number" id="sueldoBruto" class="form-control mb-2" placeholder="Ingrese sueldo bruto">
-    
-    <label for="estadoCivil">Estado Civil:</label>
-    <select id="estadoCivil" class="form-control mb-2">
-      <option value="soltero">Soltero</option>
-      <option value="casado">Casado</option>
-    </select>
+      </center>
+      <label for="sueldoBruto">Sueldo Bruto:</label>
+      <input type="number" id="sueldoBruto" class="form-control mb-2" placeholder="Ingrese sueldo bruto">
 
-    <div class="mb-2 d-flex align-items-center">
-        <label for="conHijos">¿Tiene hijos?:    </label>
+      <label for="estadoCivil">Estado Civil:</label>
+      <select id="estadoCivil" class="form-control mb-2">
+        <option value="soltero">Soltero</option>
+        <option value="casado">Casado</option>
+      </select>
+
+      <div class="mb-2 d-flex align-items-center">
+        <label for="conHijos">¿Tiene hijos?: </label>
         <input type="checkbox" id="conHijos">
-    </div>
-      
-    <button onclick="calcularSueldoNeto()" class="btn btn-primary btn-block">Calcular</button>
+      </div>
 
-    <div id="resultados" class="mt-4">
+      <button onclick="calcularSueldoNeto()" class="btn btn-primary btn-block">Calcular</button>
+
+      <div id="resultados" class="mt-4">
         <div id="detalleJubilacion"></div>
         <div id="detalleObraSocial"></div>
         <div id="detalleLey19032"></div>
-        <hr/>
+        <hr />
         <div id="detalleGanancias"></div>
-        <hr/>
-        <div id="impuestosTotales"></div>    
-        <hr/>    
-      <div id="sueldoNeto" class="mt-3"></div>
+        <hr />
+        <div id="impuestosTotales"></div>
+        <hr />
+        <div id="sueldoNeto" class="mt-3"></div>
+      </div>
     </div>
-  </div>
+  </main>
 
+  <footer>
+    <!-- Social Media Icons -->
+    <div class="social-icons d-flex justify-content-center mt-4">
+      <a href="https://github.com/jpromanonet" target="_blank"><div class="social-icon"><i class="fab fa-github"></i></div></a>
+      <a href="https://twitter.com/jpromanonet" target="_blank"><div class="social-icon"><i class="fab fa-twitter"></i></div></a>
+      <a href="https://linkedin.com/in/jpromanonet" target="_blank"><div class="social-icon"><i class="fab fa-linkedin"></i></div></a>
+      <a href="https://jpromano.net" target="_blank"><div class="social-icon"><i class="fas fa-globe"></i></div></a>
+      <a href="https://instagram.com/jpromanonet" target="_blank"><div class="social-icon"><i class="fab fa-instagram"></i></div></a>
+      <a href="https://linktr.ee/jpromanonet" target="_blank"><div class="social-icon"><i class="fas fa-link"></i></div></a>
+    </div>
+
+  </footer>
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   <!-- Masacara para el input y los resultados -->
   <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.6/dist/autoNumeric.min.js"></script>
   <!-- Script propio -->
   <script src="./assets/js/script.js" defer></script>
 </body>
+
 </html>
