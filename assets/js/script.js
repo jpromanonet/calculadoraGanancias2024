@@ -57,11 +57,11 @@ function calcularSueldoNeto() {
     const sueldoNeto = sueldoBruto - impuestosTotales;
 
     // Mostrar resultados detallados
-    document.getElementById("detalleJubilacion").innerHTML = `Jubilación - ${porcentajeJubilacion}%: $${descuentoJubilacion.toFixed(2)}`;
-    document.getElementById("detalleObraSocial").innerHTML = `Obra Social - ${porcentajeObraSocial}%: $${descuentoObraSocial.toFixed(2)}`;
-    document.getElementById("detalleLey19032").innerHTML = `Ley 19032 - ${porcentajeLey19032}%: $${descuentoLey19032.toFixed(2)}`;
-    document.getElementById("detalleGanancias").innerHTML = `Impuesto a las Ganancias: $${descuentoGanancias.toFixed(2)}`;
-    document.getElementById("impuestosTotales").innerHTML = `Impuestos Totales: $${impuestosTotales.toFixed(2)}`;
+    document.getElementById("detalleJubilacion").innerHTML = `<b>Jubilación - ${porcentajeJubilacion}%</b>: $${descuentoJubilacion.toFixed(2)}`;
+    document.getElementById("detalleObraSocial").innerHTML = `<b>Obra Social - ${porcentajeObraSocial}%</b>: $${descuentoObraSocial.toFixed(2)}`;
+    document.getElementById("detalleLey19032").innerHTML = `<b>Ley 19032 - ${porcentajeLey19032}%</b>: $${descuentoLey19032.toFixed(2)}`;
+    document.getElementById("detalleGanancias").innerHTML = `<b>Impuesto a las Ganancias</b>: $${descuentoGanancias.toFixed(2)}`;
+    document.getElementById("impuestosTotales").innerHTML = `<b>Impuestos Totales</b>: $${impuestosTotales.toFixed(2)}`;
 
     // Mostrar sueldo neto final
     document.getElementById("sueldoNeto").innerHTML = `<h2>Sueldo Neto: $${sueldoNeto.toFixed(2)}</h2>`;
