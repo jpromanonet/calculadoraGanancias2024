@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Sueldo Neto</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <label for="sueldoBruto">Sueldo Bruto:</label>
+  <input type="number" id="sueldoBruto" placeholder="Ingrese sueldo bruto">
+  <button onclick="calcularSueldoNeto()">Calcular</button>
+
+  <div id="resultados">
+    <div id="detalleJubilacion"></div>
+    <div id="detalleObraSocial"></div>
+    <div id="detalleLey19032"></div>
+    <div id="detalleGanancias"></div>
+    <div id="impuestoGanancias"></div>
+    <div id="impuestosTotales"></div>
+    <div id="sueldoNeto"></div>
+  </div>
+
+</body>
+</html>
