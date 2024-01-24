@@ -26,9 +26,11 @@
       <option value="casado">Casado</option>
     </select>
 
-    <label for="conHijos">¿Tiene Hijos?</label>
-    <input type="checkbox" id="conHijos" class="form-check-input mb-2">
-
+    <div class="mb-2 d-flex align-items-center">
+        <label for="conHijos">¿Tiene hijos?:    </label>
+        <input type="checkbox" id="conHijos">
+    </div>
+      
     <button onclick="calcularSueldoNeto()" class="btn btn-primary btn-block">Calcular</button>
 
     <div id="resultados" class="mt-4">
